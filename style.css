@@ -165,6 +165,7 @@ label {
     .form-container {
         width: 100%;
         margin-top: -5px;
+        position: relative;
     }
     button {
         width: 400px;
@@ -172,24 +173,22 @@ label {
     .top,
     .middle,
     .bottom {
-        align-items: center;
+        width: 100%;
     }
     input {
-        width: 150px;
-        height: 30px;
-        filter: brightness(70%);
-    }
-    .caption {
-        align-self: center;
+        width: calc(20vw + 60px);
+        height: 35px;
+        filter: brightness(90%);
     }
     .form {
-        display: grid;
-        column-gap: 40px;
-        padding: 0 48px;
+        padding-left: 30px;
     }
     .caption {
         padding-left: 160px;
-        margin-top: -10px;
+        margin-top: -20px;
         font-size: 24px;
+    }
+    .bottom {
+        align-items: center;
     }
 }
