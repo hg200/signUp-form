@@ -107,6 +107,12 @@ button {
     font-size: 18px;
 }
 
+button:hover {
+    background-color: blueviolet;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
 .quote {
     padding: 30px;
 }
@@ -130,4 +136,18 @@ cite {
 
 .content {
     padding: 30px;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+label {
+    font-size: 14px;
+    margin-left: 5px;
+    margin-bottom: 2px;
 }
