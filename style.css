@@ -93,7 +93,7 @@ input {
     color: var(--text-clr);
     font-family: var(--font-family);
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 16px;
     background-color: transparent;
 }
 
@@ -153,6 +153,7 @@ input:invalid {
 }
 
 label {
+    color: var(--btn-clr);
     font-size: 14px;
     margin-left: 5px;
     margin-bottom: 2px;
