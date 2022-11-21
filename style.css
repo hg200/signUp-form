@@ -1,16 +1,24 @@
 :root {
-    --main-clr: rgb(15, 15, 36);
+    --main-clr: #041C32;
     --accent-clr: gainsboro;
-    --btn-clr: brown;
-    --secondary-clr: rgb(27, 27, 39);
-    --text-clr: white;
+    --btn-clr: #ECB365;
+    --secondary-clr: #064663;
+    --text-clr: gainsboro;
+    --tertiary-clr: #04293A;
+    --font-family: "Kingthings-Foundation";
 }
 
 * {
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Kingthings-Foundation";
+    src: url(./Kingthings-Foundation/Kingthings_Foundation.ttf);
+}
+
 body {
+    font-family: var(--font-family);
     margin: 0;
     padding: 0;
     background-color: var(--accent-clr);
@@ -48,18 +56,19 @@ fieldset {
 
 .middle {
     background-color: var(--secondary-clr);
+    padding: 30px;
 }
 
-.top,
-.bottom {
+.top {
     background-color: var(--main-clr);
 }
 
 .bottom {
+    background-color: #04293A;
     height: 30%;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 50px 0 0 30px;
 }
 
 img {
@@ -70,12 +79,17 @@ img {
 .form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    column-gap: 50px;
+    gap: 30px;
+    column-gap: 40px;
 }
 
 input {
     width: 20vw;
+    height: 25px;
+    background-color: var(--text-clr);
+    border-radius: 0.5em;
+    border-style: none;
+    padding: 5px;
 }
 
 .form>div {
@@ -86,4 +100,34 @@ input {
 button {
     width: 200px;
     height: 40px;
+    background-color: var(--btn-clr);
+    border-radius: 1em;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.quote {
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.caption {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--btn-clr);
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+cite {
+    color: var(--btn-clr);
+}
+
+.content {
+    padding: 30px;
 }
