@@ -1,3 +1,11 @@
+:root {
+    --main-clr: rgb(15, 15, 36);
+    --accent-clr: gainsboro;
+    --btn-clr: brown;
+    --secondary-clr: rgb(27, 27, 39);
+    --text-clr: white;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,7 +13,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: gainsboro;
+    background-color: var(--accent-clr);
     display: flex;
 }
 
@@ -18,12 +26,12 @@ form {
 }
 
 .form-container {
-    color: white;
+    color: var(--text-clr);
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 60vw;
-    background-color: black;
+    background-color: var(--main-clr);
     position: relative;
     border: none;
     outline: none;
@@ -39,12 +47,12 @@ fieldset {
 }
 
 .middle {
-    background-color: rgb(27, 27, 39);
+    background-color: var(--secondary-clr);
 }
 
 .top,
 .bottom {
-    background-color: rgb(15, 15, 36);
+    background-color: var(--main-clr);
 }
 
 .bottom {
@@ -54,4 +62,20 @@ fieldset {
 img {
     height: 100vh;
     width: 40vw;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    column-gap: 50px;
+}
+
+input {
+    width: 20vw;
+}
+
+.form>div {
+    display: flex;
+    flex-direction: column;
 }
