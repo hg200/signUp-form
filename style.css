@@ -166,7 +166,7 @@ label {
         flex-direction: column;
     }
     img {
-        width: 100%;
+        width: 100vw;
         height: 40%;
     }
     .form-container {
