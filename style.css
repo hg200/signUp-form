@@ -5,7 +5,7 @@
     --secondary-clr: #064663;
     --text-clr: gainsboro;
     --tertiary-clr: #04293A;
-    --font-family: "Kingthings-Foundation";
+    --font-family: "sans-serif, Arial, Helvetica";
 }
 
 * {
@@ -19,6 +19,7 @@
 
 body {
     font-family: var(--font-family);
+    width: 100vw;
     margin: 0;
     padding: 0;
     background-color: var(--accent-clr);
