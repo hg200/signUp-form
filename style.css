@@ -180,7 +180,8 @@ label {
     .top,
     .middle,
     .bottom {
-        width: 100%;
+        width: 100vw;
+        margin: 0;
     }
     input {
         width: calc(20vw + 60px);
