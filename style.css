@@ -79,7 +79,7 @@ fieldset {
     display: flex;
     align-items: flex-end;
     padding: 0 15%;
-    opacity: 0.3;
+    opacity: 0.5;
     margin-top: 10vh;
 }
 
@@ -87,7 +87,6 @@ fieldset {
     position: relative;
     height: 60px;
     width: 60px;
-    opacity: 1;
 }
 
 .logo span {
